@@ -1,0 +1,36 @@
+# Marks Calculation and Grading System
+
+n1 = float(input("Enter Marks In Practical Research 2: "))
+n2 = float(input("Enter Marks In Mathematics: "))
+n3 = float(input("Enter Marks In English: "))
+n4 = float(input("Enter Marks In Filipino: "))
+n5 = float(input("Enter Marks In MAPEH: "))
+n6 = float(input("Enter Marks In Bussiness Simulation: "))
+n7 = float(input("Enter Marks In Bussiness Finance: "))
+n8 = float(input("Enter Marks In FABM2: "))
+
+sum = n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8
+
+print("The Sum is:", sum)
+
+percentage = (sum / 800) * 100
+
+print("The Percentage Is:", percentage)
+
+# Grading Line
+if percentage > 90:
+    print("A")
+elif percentage > 80:
+    print("A")
+elif percentage >= 70:
+    print("B+")
+elif percentage >= 60:
+    print("B")
+elif percentage >= 50:
+    print("C+")
+elif percentage >= 40:
+    print("C")
+elif percentage > 30:
+    print("D+")
+else:
+    print("Failed")
