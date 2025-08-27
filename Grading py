@@ -1,36 +1,56 @@
+while True:
+    try:
+        n1 = float(input("Enter Marks In FABM2: "))
+        n2 = float(input("Enter Marks In Physical Education and Health: "))
+        n3 = float(input("Enter Marks In Physical Science: "))
+        n4 = float(input("Enter Marks In Entrepreneurship: "))
+        n5 = float(input("Enter Marks In Inquiries, Investigation and Immersion: "))
+        n6 = float(input("Enter Marks In Business Ethics: "))
+        n7 = float(input("Enter Marks In Business Enterprise Simulation: "))
+        n8 = float(input("Enter Marks In Business Finance: "))
+        n9 = float(input("Enter Marks In Practical Research 2: "))
+        n10 = float(input("Enter Marks In Gen Math: "))
+        n11 = float(input("Enter Marks In CPAR: "))
+        n12 = float(input("Enter Marks In Introduction of Philosophy of the Human Person: "))
 
+        total = n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10 + n11 + n12
 
-n1 = float(input("Enter Marks In Practical Research 2: "))
-n2 = float(input("Enter Marks In Mathematics: "))
-n3 = float(input("Enter Marks In English: "))
-n4 = float(input("Enter Marks In Filipino: "))
-n5 = float(input("Enter Marks In MAPEH: "))
-n6 = float(input("Enter Marks In Bussiness Simulation: "))
-n7 = float(input("Enter Marks In Bussiness Finance: "))
-n8 = float(input("Enter Marks In FABM2: "))
+        print("The Total is:", total)
 
-sum = n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8
+        percentage = (total / 1200) * 100
 
-print("The Sum is:", sum)
+        print("The Percentage Is:", percentage)
 
-percentage = (sum / 800) * 100
+        if percentage > 90:
+            print("A")
+        elif percentage > 80:
+            print("A")
+        elif percentage >= 70:
+            print("B+")
+        elif percentage >= 60:
+            print("B")
+        elif percentage >= 50:
+            print("C+")
+        elif percentage >= 40:
+            print("C")
+        elif percentage >= 30:
+            print("D+")
+        else:
+            print("Failed")
 
-print("The Percentage Is:", percentage)
+    except ValueError:
+        print("Invalid input, please enter a number.")
 
-
-if percentage > 90:
-    print("A")
-elif percentage > 80:
-    print("A")
-elif percentage >= 70:
-    print("B+")
-elif percentage >= 60:
-    print("B")
-elif percentage >= 50:
-    print("C+")
-elif percentage >= 40:
-    print("C")
-elif percentage > 30:
-    print("D+")
-else:
-    print("Failed")
+    while True:
+        continue_choice = input("Do you want to continue? (yes/no): ").strip().lower()
+        
+        if continue_choice == 'yes':
+            break
+        elif continue_choice == 'no':
+            confirm_choice = input("Are you sure you want to exit? (yes/no): ").strip().lower()
+            if confirm_choice == 'yes':
+                exit()
+            else:
+                break
+        else:
+            print("Invalid choice, please enter yes or no only.")
