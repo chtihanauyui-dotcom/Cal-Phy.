@@ -1,4 +1,4 @@
-# Marks Calculation and Grading System
+
 
 n1 = float(input("Enter Marks In Practical Research 2: "))
 n2 = float(input("Enter Marks In Mathematics: "))
@@ -17,7 +17,7 @@ percentage = (sum / 800) * 100
 
 print("The Percentage Is:", percentage)
 
-# Grading Line
+
 if percentage > 90:
     print("A")
 elif percentage > 80:
